@@ -99,12 +99,22 @@ p {
 /* Navbar */
 
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   background-color: var(white);
   align-items: center;
-  color: var(--color-black);
+  color: var(--color-white);
   padding: 16px;
+  background-color: transparent;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(82, 88, 101);
+  padding: 2px;
+  opacity: 0.95;
 }
 
 .navbar__menu {
@@ -124,13 +134,13 @@ p {
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-white);
+  background-color: var(--color-yellow);
   border-radius: 4px;
+  color: #000000;
 }
 
 .navbar__toggle-btn {
@@ -145,6 +155,7 @@ p {
 #home {
   background: url("imgs/main_background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
