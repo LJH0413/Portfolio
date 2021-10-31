@@ -16,14 +16,14 @@
   --color-black: #000000;
 
   /* Font size */
-  --font-large: 48px;
+  --font-large: 50px;
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
 
   /* Font weight */
-  --weight-bold: 700;
+  --weight-bold: 1200;
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
@@ -44,7 +44,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   cursor: default;
-
 }
 
 a {
@@ -55,6 +54,10 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 
 button {
@@ -69,6 +72,7 @@ h1 {
   font-size: var(--font-large);
   font-weight: var(--weigt-bold);
   color: var(--color-black);
+  margin: 16px 0px;
 }
 
 h2 {
@@ -164,7 +168,6 @@ p {
   padding: 50px;
   text-align: center;
   margin: auto;
-  max-width: 1200px;
 }
 
 .section__container {
@@ -385,4 +388,33 @@ p {
   margin-left: -12px;
   margin-top: 8px;
   background-color: var(--color-dark-white);
+}
+
+/* Contact */
+#contact {
+  background-color: rgb(81, 88, 102)
+}
+
+.contact__tittle,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__tittle {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-medium);
+  margin: 24px 0;
+}
+
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: #73aace;
 }

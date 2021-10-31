@@ -1,0 +1,37 @@
+<!-- Testimonals -->
+  <section id="testimonials" class="section">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img 
+          src="imgs/common.jpeg" 
+          alt="mimoticon" 
+          class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
+              평가1              
+            </p>
+            <p class="name"> 
+              <a href="JUNHEE"></a> 
+            </p>
+          </div>
+      </div>
+
+       <div class="testimonial">
+        <img 
+          src="imgs/common.jpeg" 
+          alt="mimoticon" 
+          class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
+              평가1              
+            </p>
+          </div>
+      </div>
+    </div>
+
+
+  </section>
