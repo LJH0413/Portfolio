@@ -114,7 +114,6 @@ p {
 .navbar_logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-
 }
 
 .navbar__menu__item {
@@ -134,9 +133,17 @@ p {
   border-radius: 4px;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  font-size: 24px;
+  display: none;
+}
+
 /* Home */
 #home {
-  background: url("imgs/home-background.png") center/cover no-repeat;
+  background: url("imgs/main_background.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
@@ -402,7 +409,8 @@ p {
 }
 
 .contact__tittle {
-  margin: 32px 0;
+  margin: 26px 0;
+  margin-bottom: 20px;
 }
 
 .contact__links {
@@ -417,4 +425,40 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: #73aace;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
 }
