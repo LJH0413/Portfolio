@@ -85,7 +85,7 @@
         <h2 class="major__title">Back-end</h2>
         <p class="major__description">
           Java, Oracle, MySQL,
-          <br/> Python, Spring
+          <br/> Python, Spring, JSP
         </p>
       </div>
       <div class="major">
@@ -230,10 +230,18 @@
     <h1>My Work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn">All <span class="category__count">5</span></button>
-      <button class="category__btn">Front-end <span class="category__count">2</span></button>
-      <button class="category__btn">Back-end <span class="category__count">2</span></button>
-      <button class="category__btn">Mobile <span class="category__count">1</span></button>
+      <button class="category__btn selected" data-filter="*">
+        All <span class="category__count">5</span>
+      </button>
+      <button class="category__btn" data-filter="front-end">
+        Front-end <span class="category__count">2</span>
+      </button>
+      <button class="category__btn" data-filter="back-end">
+        Back-end <span class="category__count">2</span>
+      </button>
+      <button class="category__btn" data-filter="mobile">
+        Mobile <span class="category__count">1</span>
+      </button>
     </div>
 
     <div class="work__projects">
@@ -241,14 +249,18 @@
         href="https://github.com/LJH0413/Protfolio" 
         class="project"
         target="blank"
+        data-type="front-end"
         >
       <img 
         class="project__img"
-        src="imgs/projects/project6.png" 
+        src="imgs/projects/portfolio.png" 
         alt="project">
       <div class="project__description">
-        <h3>Project1</h3>
-        <span>Project Kosmo</span>
+        <h2>My Portfolio</h2>
+        <span>
+          개인 프로젝트 
+        </br> 포트폴리오 만들기
+        </span>
       </div>
       </a>
 
@@ -256,10 +268,11 @@
         href="https://github.com/LJH0413/Protfolio" 
         class="project"
         target="blank"
+        data-type="front-end"
         >
       <img src="imgs/projects/project6.png" alt="project">
       <div class="project__description">
-        <h3>Project2</h3>
+        <h2>Project1</h2>
         <span>Project Kosmo</span>
       </div>
       </a>
@@ -268,10 +281,11 @@
         href="https://github.com/LJH0413/Protfolio" 
         class="project"
         target="blank"
+        data-type="back-end"
         >
       <img src="imgs/projects/project4.png" alt="project">
       <div class="project__description">
-        <h3>Project3</h3>
+        <h2>Project2</h2>
         <span>Project Kosmo</span>
       </div>
       </a>
@@ -280,10 +294,11 @@
         href="https://github.com/LJH0413/Protfolio" 
         class="project"
         target="blank"
+        data-type="back-end"
         >
       <img src="imgs/projects/project4.png" alt="project">
       <div class="project__description">
-        <h3>Project4</h3>
+        <h2>Project3</h2>
         <span>Project Kosmo</span>
       </div>
       </a>
@@ -292,10 +307,11 @@
         href="https://github.com/LJH0413/Protfolio" 
         class="project"
         target="blank"
+        data-type="mobile"
         >
       <img src="imgs/projects/project7.png" alt="project">
       <div class="project__description">
-        <h3>Project4</h3>
+        <h2>Project4</h2>
         <span>Project Kosmo</span>
       </div>
       </a>
