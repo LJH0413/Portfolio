@@ -34,14 +34,13 @@
   --animation-duration: 300ms;
 }
 
-
 /* universal tags */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -249,7 +248,6 @@ p {
 .job__description {
   margin: 0px 16px;
   text-align: left;
-
 }
 
 .job__name,
@@ -282,9 +280,9 @@ p {
 }
 
 .skillset__left {
-  flex-basis: 60%;
+  flex-basis: 50%;
   background-color: var(--color-dark-grey);
-  padding: 20px 40px;
+  padding: 10px 40px;
 }
 
 .skill__description {
@@ -308,7 +306,7 @@ p {
 }
 
 .skillset_right {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 .tools {
@@ -331,7 +329,6 @@ p {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
-
 
 .category__btn {
   border: 1px solid var(--color-dark-white);
@@ -373,7 +370,6 @@ p {
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
-
 }
 
 .project {
@@ -406,7 +402,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.0;
+  opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
 }
@@ -421,7 +417,7 @@ p {
 }
 
 .project__description h3 :after {
-  content: ' ';
+  content: " ";
   display: block;
   position: relative;
   left: 50%;
@@ -472,7 +468,7 @@ p {
   height: 50px;
   font-size: 30px;
   color: var(--color-white);
-  background-color:rgb(81, 88, 102);
+  background-color: rgb(81, 88, 102);
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;
@@ -486,13 +482,13 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-/* Font size */
+  /* Font size */
   :root {
-  --font-large: 30px;
-  --font-medium: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-  --font-micro:12px;
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
   }
   .navbar__toggle-btn {
     display: block;
@@ -517,13 +513,13 @@ p {
     width: 100%;
     display: none;
   }
-  
+
   .navbar__menu.open {
     display: block;
   }
 
   .navbar__toggle-btn {
-    color:wheat;
+    color: wheat;
   }
 
   .about__majors {
@@ -543,13 +539,12 @@ p {
   .category__btn {
     margin: 4px;
     width: 100%;
-    
   }
 
   .project {
     flex-grow: 1;
   }
-  
+
   .arrow__up {
     width: 50px;
     height: 50px;
@@ -558,5 +553,4 @@ p {
     right: 16px;
     bottom: 16px;
   }
-
 }
