@@ -430,6 +430,23 @@ p {
   background-color: var(--color-dark-white);
 }
 
+/* study */
+
+#study {
+  background-color: var(--color-yellow);
+}
+
+#study span {
+  color: black;
+}
+
+#study span:hover {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 /* Contact */
 #contact {
   background-color: rgb(81, 88, 102);
